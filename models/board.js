@@ -1,22 +1,25 @@
 const mongoose = require('mongoose')
 
 const BoardSchema = mongoose.Schema({
-    name: String,
-    notes: [{
+    name: {
         type: String,
+        required: true
+    },
+    notes: [{
+        style: String,
         text: String,
         x: Number,
         y: Number
     }],
     strings: [{
-        type: String,
+        style: String,
         x1: Number,
         y1: Number,
         x2: Number,
         y2: Number,
     }],
     stickers:[{
-        type: String,
+        style: String,
         x: Number,
         y: Number
     }]

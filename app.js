@@ -15,7 +15,7 @@ app.get('/', (req, res) =>{
 });
 
 // DB
-mongoose.connect('mongodb://admin:pass@localhost:27017/admin', {useNewUrlParser: true},()=>console.log('connected'))
+mongoose.connect('mongodb://admin:pass@localhost:27017/admin', {useNewUrlParser: true});
 
 // Server
 app.listen(3000);
